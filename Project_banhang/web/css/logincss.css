@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 14, 2023, 10:43:06 AM
+    Author     : quynh
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 27, 2022, 10:43:38 PM
+    Author     : quynh
+*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    padding: 0;
+    margin: 0;
+
+}
+container-login {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+form-login{
+    width: 406px;
+    max-width: 406px;
+
+}
+#signup {
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    width: 410px;
+}
+
+#signup .header {
+    margin-bottom: 20px;
+}
+
+#signup .header h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 13px;
+}
+
+#signup .header p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#signup .sep {
+    height: 1px;
+    background: #e8e8e8;
+    width: 406px;
+    margin: 0px -25px;
+}
+
+#signup .inputs {
+    margin-top: 25px;
+}
+
+
+
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+#signup .inputs input[type=text], input[type=password],input[type=number], textarea[type=text],.Add-acc {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+#signup .inputs input[type=submit], .Add-acc {
+    font-size: 1.3rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+
+
+
+}
+
+.Add-acc{
+    padding: 14px 103px;
+    color: black;
+}
+#signup  input[type=submit]:hover{
+    color: white;
+    background: lightskyblue;
+}
+
+
+
+
+#signup .inputs .checkboxy {
+    display: block;
+    position: static;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+}
+
+#signup .inputs input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#signup .inputs label.terms {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+login-container{
+    margin-top: -10px;
+    width: 330px;
+    margin-left: 14px;
+}
+
+.login-remeber{
+    display: inline-block;
+    width:15px; 
+    height:15px;
+    border: 0.5px solid #ccc;
+}
+
+.login-fogot{
+    display: inline-block;
+    margin-left: 166px;
+    font-size: small;
+}
+
+.acc-back{
+
+    margin-left: 14px;
+    margin-top: -16px;
+    display: flex;
+    width: 330px;
+
+}

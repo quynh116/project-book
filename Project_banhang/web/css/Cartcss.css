@@ -1,0 +1,360 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 21, 2023, 1:18:50 PM
+    Author     : quynh
+*/
+.cart-p{
+    color: black;
+}
+
+.modal-profile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+
+.modal-profile:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.overlay-close{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.modal_close-btn{
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: x-large;
+}
+
+.modal_profile-body a{
+    text-decoration: none;
+}
+
+.modal_profile-body{
+    height: 709px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    
+}
+
+.card-b{
+    
+}
+
+.cart-body1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+
+.modal-childBody{
+    width: 100%;
+    min-height: 689px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-left{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 525px;
+    height: 600px;
+    
+    float: left;
+}
+
+.modal-delivery{
+    width: 525px;
+    height: 375px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+.modal-delivery-body{
+    padding: 5px 15px;
+}
+
+.modal-delivery-radio{
+    padding-left: 5px;
+}
+
+.modal-delivery-radio input{
+    accent-color: blue;
+}
+
+.modal-delivery-text{
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 20px;
+    margin-bottom: 8px;
+    color: #00C2FF;
+}
+
+.modal-delivery-box{
+    width: 417px;
+    height: 210px;
+    background-color: #E1F0FF;
+    border-radius: 5px;
+    margin-left: 5px;
+    overflow-y: auto;
+}
+
+.modal-delivery-select{
+    
+    height: 42px;
+}
+
+.modal-delivery-text1{
+    float: left;
+}
+
+.modal-delivery-text2{
+    float: right;
+}
+
+.modal-delivery-box{
+    padding: 10px;
+}
+
+.modal-delivery-num{
+    display: flex;
+  position: relative;
+  align-items: center;
+  
+  margin-bottom: 5px;
+}
+
+.modal-delivery-num img{
+    height: 80px;
+    width: 57px;
+}
+
+.modal-delivery-product p{
+    color: black;
+    margin-left: 10px;
+}
+
+.modal-delivery-money{
+    position: absolute;
+    right: 0;
+}
+
+.modal-pay{
+    width: 525px;
+    height: 212px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.modal-pay-body{
+    padding: 5px 10px;
+}
+
+.modal-pay-radio{
+    padding: 10px 15px;
+}
+
+.modal-pay-radio input{
+    accent-color: blue;
+}
+
+.modal-pay-radio span{
+    font-size: large;
+    font-weight: 450;
+}
+
+.modal-right{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 410px;
+    height: 600px;
+    
+    float: right;
+}
+
+.modal-address{
+    width: 410px;
+    height: 152px;
+    border-radius: 10px;
+    margin-bottom: 49px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.modal-address-body{
+    padding: 5px 10px;
+    
+}
+.modal-address-title{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.modal-address-name{
+    display: flex;
+    padding: 5px 10px;
+}
+
+
+.modal-pay-center{
+    margin: 5px;
+    
+    width: 1px;
+    height: 16px;
+    border: 1px solid #ccc;
+}
+
+.modal-address-detail{
+    padding: 0 11px;
+    font-size: large;
+    font-weight: 450;
+}
+
+.modal-order{
+    width: 410px;
+    height: 398px;
+    
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.modal-order-body{
+    padding: 5px 10px;
+}
+
+.modal-order-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-order-allProduct{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-order-delivery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-order-overflow{
+    overflow-y: auto;
+    background-color: #E1F0FF;
+    padding: 5px 10px;
+    height: 80px;
+    border-radius: 5px;
+}
+.modal-order-allMoney{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-order-submit{
+    margin-top: 15px;
+}
+
+.modal-order-submit input{
+    padding: 4px 122px;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: #FD4343;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-order-submit:hover{
+    background-color: FF1313;
+}
+
+.info_product-input{
+    padding: 5px;
+    padding-right: 135px;
+    margin-bottom: 18px;
+}
+
+.info_product-input:hover{
+    border: 1px solid #ccc;
+}
+
+.info_product-select{
+    padding: 5px;
+    padding-right: 125px;
+    border: 1px solid #ccc;
+}
+
+.info_product-select1{
+    padding: 5px;
+    padding-right: 168px;
+    border: 1px solid #ccc;
+}
+
+.info_product-select2{
+    padding: 5px;
+    padding-right: 177px;
+    border: 1px solid #ccc;
+    margin-bottom: 18px;
+}
+
+.quantity-num{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.quantity-update{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.quantity-update:hover{
+    background-color: #00C814;
+    color: white;
+}
+
+.info_product-submit{
+    padding: 5px 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: white;
+    background-color: #1E90FF;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.info_product-submit:hover{
+    background-color: #00BFFF;
+}
+
