@@ -98,7 +98,7 @@
                                                 <option  value="" selected>Chọn phường xã</option>
                                                 </select>
                                                  </div>    
-                                            <input class="info_product-input" type="text" name="txtAddres" placeholder="Địa chỉ" required=""/>
+                                            <input class="info_product-input" type="text" name="txtAddres" placeholder="Nhập địa chỉ" required=""/>
                                             <br/><input class="info_product-submit" type="submit" value="Lưu" name="action"/>
                                         </from>
                                     

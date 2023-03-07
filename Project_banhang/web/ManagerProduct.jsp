@@ -8,7 +8,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+        <title>Manager Product</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo-removebg-preview.png"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,6 +42,26 @@
                 width: 70px;
                 height: 100px;
             }
+            .manager-menu-product{
+                display: flex;
+                justify-content: space-between;
+            }
+            .filter-group span{
+                width: 100px;
+                font-size: initial;
+            }
+            .filter-group{
+                display: flex;
+                align-items: baseline;
+            }
+
+            .filter-group button{
+                border-radius: 0 5px 5px 0;
+                margin-top: 1px;
+            }
+            .filter-group input{
+                border-radius: 5px 0 0 5px;
+            }
         </style>
     <body>
 
@@ -57,6 +78,42 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="">
+                    <form action="" method="post">
+                        <div class="manager-menu-product">
+
+                            <div class="filter-group">
+                                <span style="width: 90px;">Tác giả</span>
+                                <select class="form-control">
+                                    <option>Tất cả</option>
+                                    <option>Hồ Chí Minh</option>
+                                    <option>Đồng nai</option>
+
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <span>Thể loại</span>
+                                <select class="form-control">
+                                    <option>Bất kỳ</option>
+                                    <option>Hoàn thành</option>
+                                    <option>Đang giao</option>
+
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <span style="width: 115px;">Tên sách</span>
+                                <input type="text" name="txtname" placeholder="Nhập tên sách" class="form-control">
+                                <button type="submit" class="btn btn-primary" name=""><i class="fa fa-search"></i></button>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
@@ -83,7 +140,7 @@
                                 </span>
                             </td>
                             <td>1</td>
-                            <td>Đắc nhân tâm}</td>
+                            <td>Đắc nhân tâm</td>
                             <td>
                                 <img style="width: 70px; height: 100px;" src="images/Rectangle 30.png" alt="dacnhantam.png">
                             </td>
@@ -101,7 +158,7 @@
                                 </span>
                             </td>
                             <td>1</td>
-                            <td>Đắc nhân tâm}</td>
+                            <td>Đắc nhân tâm</td>
                             <td>
                                 <img style="width: 70px; height: 100px;" src="images/Rectangle 30.png" alt="dacnhantam.png">
                             </td>

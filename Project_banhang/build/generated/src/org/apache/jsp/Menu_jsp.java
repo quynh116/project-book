@@ -96,7 +96,7 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <div class=\"header_Login-img\"><img  src=\"images/icon_login.png\" alt=\"login\"/>\n");
       out.write("                                <div class=\"header-Login header_Login-ht\">\n");
       out.write("                                    <p style=\"margin-top: 5px;\" class=\"header-Login-p\"><a  href=\"#profile\" >Tài khoản của tôi</a></p>\n");
-      out.write("                                    <p class=\"header-Login-p\"><a  href=\"#\" >Địa chỉ của tôi</a></p>\n");
+      out.write("                                    <p class=\"header-Login-p\"><a  href=\"profileAcc.jsp\" class=\"address-button\" >Địa chỉ của tôi</a></p>\n");
       out.write("                                    <p style=\"\" class=\"header-Login-p\"><a  href=\"Login1.jsp\">Đăng Nhập</a></p>\n");
       out.write("\n");
       out.write("                                </div>\n");
@@ -133,10 +133,10 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <p><img style=\"padding-bottom: 5px;\" src=\"images/user-solid.svg\"><span></span><strong>Huynh pham</strong></p>\n");
       out.write("                        <div class=\"profile-info-email\">\n");
       out.write("                            <img src=\"images/gmail.png\" alt=\"gmail.png\"><div>Huynhpham@gmail.com</div></div>\n");
-      out.write("                        <p><img src=\"images/square-phone-solid.svg\" alt=\"phone.svg\"><span></span> <strong>0978567890</strong></p>\n");
+      out.write("                        <br><p><img src=\"images/square-phone-solid.svg\" alt=\"phone.svg\"><span></span> <strong>0978567890</strong></p>\n");
       out.write("                    </div>\n");
       out.write("\n");
-      out.write("                    <div class=\"edit-form-profile\" >\n");
+      out.write("<!--                    <div class=\"edit-form-profile\" >\n");
       out.write("                        <form action=\"#\" method=\"post\">\n");
       out.write("                            <label for=\"name\">Name: </label>\n");
       out.write("                            <span></span><input type=\"text\" id=\"name\" name=\"name\" value=\"Huynh pham\"><br><br>\n");
@@ -148,8 +148,9 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                <input type=\"submit\" value=\"Save\" name=\"\">\n");
       out.write("                            </div>\n");
       out.write("                        </form>\n");
-      out.write("                    </div>\n");
+      out.write("                    </div>-->\n");
       out.write("                </div>\n");
+      out.write("                <a href=\"profileAcc.jsp\" >Chỉnh sửa thông tin</a>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("\n");

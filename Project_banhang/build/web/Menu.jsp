@@ -57,7 +57,7 @@
                             <div class="header_Login-img"><img  src="images/icon_login.png" alt="login"/>
                                 <div class="header-Login header_Login-ht">
                                     <p style="margin-top: 5px;" class="header-Login-p"><a  href="#profile" >Tài khoản của tôi</a></p>
-                                    <p class="header-Login-p"><a  href="#" >Địa chỉ của tôi</a></p>
+                                    <p class="header-Login-p"><a  href="profileAcc.jsp" class="address-button" >Địa chỉ của tôi</a></p>
                                     <p style="" class="header-Login-p"><a  href="Login1.jsp">Đăng Nhập</a></p>
 
                                 </div>
@@ -94,10 +94,10 @@
                         <p><img style="padding-bottom: 5px;" src="images/user-solid.svg"><span></span><strong>Huynh pham</strong></p>
                         <div class="profile-info-email">
                             <img src="images/gmail.png" alt="gmail.png"><div>Huynhpham@gmail.com</div></div>
-                        <p><img src="images/square-phone-solid.svg" alt="phone.svg"><span></span> <strong>0978567890</strong></p>
+                        <br><p><img src="images/square-phone-solid.svg" alt="phone.svg"><span></span> <strong>0978567890</strong></p>
                     </div>
 
-                    <div class="edit-form-profile" >
+<!--                    <div class="edit-form-profile" >
                         <form action="#" method="post">
                             <label for="name">Name: </label>
                             <span></span><input type="text" id="name" name="name" value="Huynh pham"><br><br>
@@ -109,8 +109,9 @@
                                 <input type="submit" value="Save" name="">
                             </div>
                         </form>
-                    </div>
+                    </div>-->
                 </div>
+                <a href="profileAcc.jsp" >Chỉnh sửa thông tin</a>
             </div>
         </div>
 

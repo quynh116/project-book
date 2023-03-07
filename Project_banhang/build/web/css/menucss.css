@@ -254,7 +254,7 @@ and open the template in the editor.
 .profile-info-email{
     display: flex;
         align-items: center;
-    margin-top: -50px;
+        
 }
 .profile-info-email div{
     word-wrap: break-word;

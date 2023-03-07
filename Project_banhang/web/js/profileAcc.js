@@ -1,29 +1,16 @@
-const links = document.querySelectorAll(".navbar > nav > ul > li");
-const cards = document.querySelectorAll(".card");
+const avatarInputs = document.querySelectorAll('input[name="avatar"]');
+const selectedAvatar = document.getElementById('selected-avatar');
 
-[...links].map((link, index) => {
-  link.addEventListener("click", () => onLinkClick(link, index), false);
+for (let i = 0; i < avatarInputs.length; i++) {
+    avatarInputs[i].addEventListener('change', function () {
+        selectedAvatar.src = this.value;
+    });
+}
+
+var editButton = document.querySelector('.edit-button');
+var editForm = document.querySelector('.edit-form');
+
+editButton.addEventListener('click', function () {
+    editForm.style.display = 'block';
 });
 
-const onLinkClick = (link, currentIndex) => {
-  const selectedItem = link.getAttribute("name");
-  cards.forEach((card) => {
-    card.classList.remove("active");
-  });
-  // const currentCard = [...cards].find((card) =>
-  //   card.classList.contains(selectedItem)
-  // );
-
-  const currentCard = [...cards].find((card) =>
-    Object.keys(card.dataset).includes(selectedItem)
-  );
-  currentCard.classList.add("active");
-  highLightSelectedLink(currentIndex);
-};
-
-const highLightSelectedLink = (currentIndex) => {
-  links.forEach((link) => {
-    link.classList.remove("selectedLink");
-  });
-  links[currentIndex].classList.add("selectedLink");
-};
