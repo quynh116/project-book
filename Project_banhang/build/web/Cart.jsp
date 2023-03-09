@@ -17,59 +17,71 @@
 
     <body>
         <jsp:include page="headerAdmin.jsp"></jsp:include>
-            <div class="shopping-cart">
-                <div class="px-4 px-lg-0">
+        <div class="shopping-cart">
+            <div class="px-4 px-lg-0">
 
-                    <div class="pb-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                <div class="pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
 
-                                    <!-- Shopping cart table -->
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="p-2 px-3 text-uppercase">Sản Phẩm</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Đơn Giá</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Số Lượng</div>
-                                                    </th>
-                                                    <th scope="col" class="border-0 bg-light">
-                                                        <div class="py-2 text-uppercase">Xóa</div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            
-                                                <tr>
-                                                    <th scope="row">
-                                                        <div class="p-2">
-                                                            <img src="images/DacNhanTam.png" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                            <div class="ml-3 d-inline-block align-middle">
-                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Đắc nhân tâm</a></h5><span class="text-muted font-weight-normal font-italic"></span>
-                                                            </div>
+                                <!-- Shopping cart table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="border-0 bg-light" style="padding-bottom: 18px;">
+                                                    <span  >
+                                                        <input type="checkbox" id="selectAll">
+                                                        <label for="selectAll"></label>
+                                                    </span>
+                                                </th>
+                                                <th scope="col" class="border-0 bg-light">
+                                                    <div class="p-2 px-3 text-uppercase">Sản Phẩm</div>
+                                                </th>
+                                                <th scope="col" class="border-0 bg-light">
+                                                    <div class="py-2 text-uppercase">Đơn Giá</div>
+                                                </th>
+                                                <th scope="col" class="border-0 bg-light">
+                                                    <div class="py-2 text-uppercase">Số Lượng</div>
+                                                </th>
+                                                <th scope="col" class="border-0 bg-light">
+                                                    <div class="py-2 text-uppercase">Xóa</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="align-middle">
+                                                    <span >
+                                                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                        <label for="checkbox1"></label>
+                                                    </span>
+                                                </td>
+                                                <th scope="row">
+                                                    <div class="p-2">
+                                                        <img src="images/DacNhanTam.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                        <div class="ml-3 d-inline-block align-middle">
+                                                            <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Đắc nhân tâm</a></h5><span class="text-muted font-weight-normal font-italic"></span>
                                                         </div>
-                                                    </th>
-                                                    <td class="align-middle"><strong>100000<span>đ</span></strong></td>
-                                                    <td class="align-middle">
-                                                        <form action="mainController" method="post">
-                                                            <input type="hidden" name="txtid" value=""> 
-                                                            <input class="quantity-num" type="number" value="1" min="1" max="10" name="txtquantity">
-                                                            <input class="quantity-update"type="submit" value="Update" name="action"/>
-                                                            
-                                                        </form>
-                                                    </td>
-                                                    <td class="align-middle"><a href="#" class="text-dark">
-                                                            <button type="button" class="btn btn-danger">Delete</button>
-                                                        </a>
-                                                    </td>
-                                                </tr> 
-                                            
+                                                    </div>
+                                                </th>
+                                                <td class="align-middle"><strong>100000<span>đ</span></strong></td>
+                                                <td class="align-middle">
+                                                    <form action="mainController" method="post">
+                                                        <input type="hidden" name="txtid" value=""> 
+                                                        <input class="quantity-num" type="number" value="1" min="1" max="10" name="txtquantity">
+                                                        <input class="quantity-update"type="submit" value="Update" name="action"/>
+
+                                                    </form>
+                                                </td>
+                                                <td class="align-middle"><a href="#" class="text-dark">
+                                                        <button type="button" class="btn btn-danger">Delete</button>
+                                                    </a>
+                                                </td>
+                                            </tr> 
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -81,28 +93,28 @@
                             <div class="col-lg-6">
                                 <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thông tin giao hàng</div>
                                 <div class="p-4">
-                                    
-                                        <from action="#" method="post" >
-                                            <br/><input class="info_product-input" type="text" name="txtemail" placeholder="Tên" required=""/>
-                                            <br/><input class="info_product-input" type="tel" name="txtphone" placeholder="Số ĐT" required=""/>
-                                            <div>
-                                                <select class="info_product-select form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+
+                                    <from action="#" method="post" >
+                                        <br/><input class="info_product-input" type="text" name="txtemail" placeholder="Tên" required=""/>
+                                        <br/><input class="info_product-input" type="tel" name="txtphone" placeholder="Số ĐT" required=""/>
+                                        <div>
+                                            <select class="info_product-select form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
                                                 <option value="" selected>Chọn tỉnh thành</option>           
-                                                </select>
+                                            </select>
 
-                                                <select class="info_product-select1 form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                                            <select class="info_product-select1 form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
                                                 <option value="" selected>Chọn quận huyện</option>
-                                                </select>
+                                            </select>
 
-                                                <select class="info_product-select2 form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                                            <select class="info_product-select2 form-select form-select-sm" id="ward" aria-label=".form-select-sm">
                                                 <option  value="" selected>Chọn phường xã</option>
-                                                </select>
-                                                 </div>    
-                                            <input class="info_product-input" type="text" name="txtAddres" placeholder="Nhập địa chỉ" required=""/>
-                                            <br/><input class="info_product-submit" type="submit" value="Lưu" name="action"/>
-                                        </from>
-                                    
-                                    
+                                            </select>
+                                        </div>    
+                                        <input class="info_product-input" type="text" name="txtAddres" placeholder="Nhập địa chỉ" required=""/>
+                                        <br/><input class="info_product-submit" type="submit" value="Lưu" name="action"/>
+                                    </from>
+
+
                                 </div>
                                 <div><h6>Huynh pham</h6></div>
                                 <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
@@ -129,37 +141,38 @@
         </div>
         <div class="modal-profile modal-overlay" id="CartProduct">
             <a href="#" class="overlay-close"></a>
-            
+
             <div class="modal_profile-body">
                 <a class="modal_close-btn" href="#">&times;</a>
                 <div class="modal-childBody">
                     <div class="modal-left">
                         <div class="modal-delivery">
-                            
+
                         </div>
                         <div class="modal-pay">
-                            
+
                         </div>
                     </div>
                     <div class="modal-right">
                         <div class="modal-address">
-                            
+
                         </div>
                         <div class="modal-order">
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-            
+
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-   
+
         <script src="js/cartjs.js" type="text/javascript"></script>
+        <script src="js/manager.js" type="text/javascript"></script>
     </body>
 
 </html>

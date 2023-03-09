@@ -17,7 +17,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/manager.css" rel="stylesheet" type="text/css"/>
-        
+
         <title>Manager Account</title>
         <style>
             .acc-status{
@@ -46,6 +46,24 @@
                 text-decoration: none;
                 color: white;
                 border: none;
+            }
+            .hover-detail{
+                position: relative;
+                cursor: pointer;
+            }
+            .hover-detail-body{
+                position: absolute;
+                display: none;
+                bottom: 19px;
+                border: 1px solid #ccc;
+                background: white;
+                width: 316px;
+                border-radius: 6px;
+                padding: 10px;
+            }
+
+            .hover-detail:hover .hover-detail-body{
+                display: block;
             }
         </style>
     </head>
@@ -206,7 +224,13 @@
                                     </span>
                                 </td>
                                 <td>1</td>
-                                <td>huynh pham</td>
+                                <td><div class="hover-detail">huynh pham
+                                        <div class="hover-detail-body">
+                                            <h4>Thông tin chi tiết</h4>
+                                            <hr>
+                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div></div>
+                                    </div>
+                                    </div></td>
                                 <td>
                                     <div>huynh@gmail.com </div>
                                 </td>
@@ -377,6 +401,18 @@
             </div>
         </div>
     </div>
+
+
+    <footer class="text-center" style="    background: #343a40;padding: 40px;margin-top: 20px;">
+        <div class="container" style="font-size: 16px;">
+            <p style="margin-top: -20px; color: white;">
+                Công ty TNHH BookOln</p>
+            <p style="color: white;"> Địa chỉ: Số 20, đường trần phú , quận 5, thành phố Hồ Chí Minh
+            </p>
+            <p style="color: white;">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hồ Chí Minh cấp lần đầu ngày 1/01/2023</p>
+            <h5 style="color: white; font-size: 20px;">© 2023 - Bản quyền thuộc về Công ty TNHH BookOln</h5>
+        </div>
+    </footer>
 
     <script src="js/manager.js" type="text/javascript"></script>
 

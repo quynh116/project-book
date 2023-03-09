@@ -420,6 +420,16 @@ Cuốn sách Đắc Nhân Tâm được chia ra làm 4 nội dung chính và m�
                 </div>
             </div>
         </div>
+        <footer class="text-center" style="    background: #343a40;padding: 40px;margin-top: 20px;">
+            <div class="container" style="font-size: 16px;">
+                <p style="margin-top: -20px; color: white;">
+                    Công ty TNHH BookOln</p>
+                <p style="color: white;"> Địa chỉ: Số 20, đường trần phú , quận 5, thành phố Hồ Chí Minh
+                </p>
+                <p style="color: white;">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hồ Chí Minh cấp lần đầu ngày 1/01/2023</p>
+                <h5 style="color: white; font-size: 20px;">© 2023 - Bản quyền thuộc về Công ty TNHH BookOln</h5>
+            </div>
+        </footer>
         <script src="js/manager.js" type="text/javascript"></script>
         <script>
 

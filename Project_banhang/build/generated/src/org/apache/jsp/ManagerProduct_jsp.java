@@ -465,6 +465,16 @@ public final class ManagerProduct_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                </div>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
+      out.write("        <footer class=\"text-center\" style=\"    background: #343a40;padding: 40px;margin-top: 20px;\">\r\n");
+      out.write("            <div class=\"container\" style=\"font-size: 16px;\">\r\n");
+      out.write("                <p style=\"margin-top: -20px; color: white;\">\r\n");
+      out.write("                    Công ty TNHH BookOln</p>\r\n");
+      out.write("                <p style=\"color: white;\"> Địa chỉ: Số 20, đường trần phú , quận 5, thành phố Hồ Chí Minh\r\n");
+      out.write("                </p>\r\n");
+      out.write("                <p style=\"color: white;\">Mã số doanh nghiệp: 0108838679 do Sở Kế Hoạch & Đầu Tư TP Hồ Chí Minh cấp lần đầu ngày 1/01/2023</p>\r\n");
+      out.write("                <h5 style=\"color: white; font-size: 20px;\">© 2023 - Bản quyền thuộc về Công ty TNHH BookOln</h5>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </footer>\r\n");
       out.write("        <script src=\"js/manager.js\" type=\"text/javascript\"></script>\r\n");
       out.write("        <script>\r\n");
       out.write("\r\n");

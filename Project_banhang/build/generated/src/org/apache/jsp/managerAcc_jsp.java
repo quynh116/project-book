@@ -56,7 +56,7 @@ public final class managerAcc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\n");
       out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
       out.write("        <link href=\"css/manager.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        <title>Manager Account</title>\n");
       out.write("        <style>\n");
       out.write("            .acc-status{\n");
@@ -247,7 +247,12 @@ public final class managerAcc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    </span>\n");
       out.write("                                </td>\n");
       out.write("                                <td>1</td>\n");
-      out.write("                                <td>huynh pham</td>\n");
+      out.write("                                <td><div class=\"hover-detail\">huynh pham\n");
+      out.write("                                        <div class=\"hover-detail-body\">\n");
+      out.write("                                            <h3>Thông tin chi tiết</h3>\n");
+      out.write("                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div></div>\n");
+      out.write("                                        </div>\n");
+      out.write("                                    </div></td>\n");
       out.write("                                <td>\n");
       out.write("                                    <div>huynh@gmail.com </div>\n");
       out.write("                                </td>\n");
