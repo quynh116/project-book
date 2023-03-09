@@ -23,8 +23,13 @@
         <style>
             .header-ketnoi{
                 display: flex;
-    align-items: center;
+                align-items: center;
+
+                
             }
+            .modal-delivery-book p, .modal-delivery-book span{
+                    color: black;
+                }
         </style>
         <script>
             $(document).ready(function () {
@@ -34,215 +39,215 @@
     </head>
     <body>
         <jsp:include page="headerAdmin.jsp"></jsp:include>
-        <div class="container-xl">
-            <div class="table-responsive">
-                <div class="table-wrapper">
-                    <div class="table-title">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h2>Quản lý <b>Đơn hàng</b></h2>
-                            </div>
-                            <div class="col-sm-8">						
-                                <a href="#" class="btn btn-primary"><i class="material-icons">&#xE863;</i> <span>Refresh List</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-filter">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="show-entries">
-
+            <div class="container-xl">
+                <div class="table-responsive">
+                    <div class="table-wrapper">
+                        <div class="table-title">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2>Quản lý <b>Đơn hàng</b></h2>
+                                </div>
+                                <div class="col-sm-8">						
+                                    <a href="#" class="btn btn-primary"><i class="material-icons">&#xE863;</i> <span>Refresh List</span></a>
                                 </div>
                             </div>
-                            <div class="">
-                                <form action="" method="post">
-                                    <button type="submit" class="btn btn-primary" name=""><i class="fa fa-search"></i></button>
-                                    <div class="filter-group">
-                                        <label for="start">Từ ngày:</label>
-                                        <input type="date" id="start" name="start" class="form-control" style="width: 150px;">
+                        </div>
+                        <div class="table-filter">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="show-entries">
 
-                                        <label for="end">Đến ngày:</label>
-                                        <input type="date" id="end" name="end" class="form-control" style="width: 150px;">
                                     </div>
-                                    <div class="filter-group">
-                                        <label>Địa điểm</label>
-                                        <select class="form-control" style="width: 180px;">
-                                            <option>Tất cả</option>
-                                            <option>Hồ Chí Minh</option>
-                                            <option>Đồng nai</option>
+                                </div>
+                                <div class="">
+                                    <form action="" method="post">
+                                        <button type="submit" class="btn btn-primary" name=""><i class="fa fa-search"></i></button>
+                                        <div class="filter-group">
+                                            <label for="start">Từ ngày:</label>
+                                            <input type="date" id="start" name="start" class="form-control" style="width: 150px;">
 
-                                        </select>
-                                    </div>
-                                    <div class="filter-group">
-                                        <label>Trạng thái</label>
-                                        <select class="form-control" style="width: 170px;">
-                                            <option>Bất kỳ</option>
-                                            <option>Hoàn thành</option>
-                                            <option>Đang giao</option>
+                                            <label for="end">Đến ngày:</label>
+                                            <input type="date" id="end" name="end" class="form-control" style="width: 150px;">
+                                        </div>
+                                        <div class="filter-group">
+                                            <label>Địa điểm</label>
+                                            <select class="form-control" style="width: 180px;">
+                                                <option>Tất cả</option>
+                                                <option>Hồ Chí Minh</option>
+                                                <option>Đồng nai</option>
 
-                                        </select>
-                                    </div>
-                                </form>
+                                            </select>
+                                        </div>
+                                        <div class="filter-group">
+                                            <label>Trạng thái</label>
+                                            <select class="form-control" style="width: 170px;">
+                                                <option>Bất kỳ</option>
+                                                <option>Hoàn thành</option>
+                                                <option>Đang giao</option>
+
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Khác hàng</th>
+                                    <th>Địa điểm</th>
+                                    <th>Ngày đặt hàng</th>						
+                                    <th>Trạng thái</th>						
+                                    <th>Tổng giá tiền</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#"> Huỳnh phạm</a></td>
+                                    <td>Thành phố Hồ Chí Minh</td>
+                                    <td>03/06/2023</td>                        
+                                    <td> Hoàn thành</td>
+                                    <td>220.000<span>đ</span></td>
+                                    <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#"> Huỳnh phạm</a></td>
+                                    <td>Thành phố Hồ Chí Minh</td>
+                                    <td>03/06/2023</td>                        
+                                    <td> Hoàn thành</td>
+                                    <td>220.000<span>đ</span></td>
+                                    <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#"> Huỳnh phạm</a></td>
+                                    <td>Thành phố Hồ Chí Minh</td>
+                                    <td>03/06/2023</td>                        
+                                    <td> Hoàn thành</td>
+                                    <td>220.000<span>đ</span></td>
+                                    <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#"> Huỳnh phạm</a></td>
+                                    <td>Thành phố Hồ Chí Minh</td>
+                                    <td>03/06/2023</td>                        
+                                    <td> Hoàn thành</td>
+                                    <td>220.000<span>đ</span></td>
+                                    <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="clearfix">
+
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#">Previous</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+
+                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Khác hàng</th>
-                                <th>Địa điểm</th>
-                                <th>Ngày đặt hàng</th>						
-                                <th>Trạng thái</th>						
-                                <th>Tổng giá tiền</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="#"> Huỳnh phạm</a></td>
-                                <td>Thành phố Hồ Chí Minh</td>
-                                <td>03/06/2023</td>                        
-                                <td> Hoàn thành</td>
-                                <td>220.000<span>đ</span></td>
-                                <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="#"> Huỳnh phạm</a></td>
-                                <td>Thành phố Hồ Chí Minh</td>
-                                <td>03/06/2023</td>                        
-                                <td> Hoàn thành</td>
-                                <td>220.000<span>đ</span></td>
-                                <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><a href="#"> Huỳnh phạm</a></td>
-                                <td>Thành phố Hồ Chí Minh</td>
-                                <td>03/06/2023</td>                        
-                                <td> Hoàn thành</td>
-                                <td>220.000<span>đ</span></td>
-                                <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><a href="#"> Huỳnh phạm</a></td>
-                                <td>Thành phố Hồ Chí Minh</td>
-                                <td>03/06/2023</td>                        
-                                <td> Hoàn thành</td>
-                                <td>220.000<span>đ</span></td>
-                                <td><a href="#" class="" title="chi tiết đơn hàng"  data-toggle="modal" data-target="#myModal">Chi tiết</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="clearfix">
-
-                        <ul class="pagination">
-                            <li class="page-item disabled"><a href="#">Previous</a></li>
-                            <li class="page-item"><a href="#" class="page-link">1</a></li>
-                            <li class="page-item"><a href="#" class="page-link">2</a></li>
-                            
-                            <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                            <li class="page-item"><a href="#" class="page-link">4</a></li>
-                            <li class="page-item"><a href="#" class="page-link">5</a></li>
-                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>        
-        </div>  
+                </div>        
+            </div>  
 
 
-        <!--modal cart-->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog ">
-                <div class="modal-content">
+            <!--modal cart-->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Chi tiết Đơn hàng</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body" style="padding: 11px 25px;">
-                        <div class="delivery-cart">
-                            <div class="modal-address-name">
-                                <strong>Huynh pham </strong><div class="modal-pay-center"></div><strong> 0987789453</strong>
-                            </div>
-                            <div class="modal-address-detail" >Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Chi tiết Đơn hàng</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
-                        <hr>
-                        <div class="modal-deliver-title">
-                            <div>Giao siêu tốc</div>
-                            <div>20000đ</div>
-                        </div>
-                        <div class="modal-deliver-body">
-                            <div class="modal-delivery-num">
-                                <div class="modal-delivery-book">
-                                    <img src="images/DacNhanTam.png" alt="dacNhanTam">
-                                    <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
 
+                        <!-- Modal body -->
+                        <div class="modal-body" style="padding: 11px 25px;">
+                            <div class="delivery-cart">
+                                <div class="modal-address-name">
+                                    <strong>Huynh pham </strong><div class="modal-pay-center"></div><strong> 0987789453</strong>
                                 </div>
-                                <div class="modal-delivery-money">100000<span>đ</span></div>
-                            </div>
-                            <div class="modal-delivery-num">
-                                <div class="modal-delivery-book">
-                                    <img src="images/DacNhanTam.png" alt="dacNhanTam">
-                                    <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
-
-                                </div>
-                                <div class="modal-delivery-money">100000<span>đ</span></div>
-                            </div>
-                            <div class="modal-delivery-num">
-                                <div class="modal-delivery-book">
-                                    <img src="images/DacNhanTam.png" alt="dacNhanTam">
-                                    <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
-
-                                </div>
-                                <div class="modal-delivery-money">100000<span>đ</span></div>
-                            </div>
-                            <div class="modal-delivery-num">
-                                <div class="modal-delivery-book">
-                                    <img src="images/DacNhanTam.png" alt="dacNhanTam">
-                                    <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
-
-                                </div>
-                                <div class="modal-delivery-money">100000<span>đ</span></div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="modal-allMoney">
-                            <div class="modal-allMoney-body">
-                                <div>
-                                    <div>Tổng Sản Phẩm</div>
-                                    <div>Phí vận chuyển</div>
-                                </div>
-                                <div>
-                                    <div><strong>200000<span>đ</span></strong></div>
-                                    <div style="float: right;"><strong>20000<span>đ</span></strong></div>
-                                </div>
+                                <div class="modal-address-detail" >Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
                             </div>
                             <hr>
-                            <div class="modal-allMoney-All">
-                                <strong>Tổng tiền</strong>
-                                <strong >220000<span>đ</span></strong>
+                            <div class="modal-deliver-title">
+                                <div>Giao siêu tốc</div>
+                                <div>20000đ</div>
+                            </div>
+                            <div class="modal-deliver-body">
+                                <div class="modal-delivery-num">
+                                    <div class="modal-delivery-book">
+                                        <img src="images/DacNhanTam.png" alt="dacNhanTam">
+                                        <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
+
+                                    </div>
+                                    <div class="modal-delivery-money">100000<span>đ</span></div>
+                                </div>
+                                <div class="modal-delivery-num">
+                                    <div class="modal-delivery-book">
+                                        <img src="images/DacNhanTam.png" alt="dacNhanTam">
+                                        <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
+
+                                    </div>
+                                    <div class="modal-delivery-money">100000<span>đ</span></div>
+                                </div>
+                                <div class="modal-delivery-num">
+                                    <div class="modal-delivery-book">
+                                        <img src="images/DacNhanTam.png" alt="dacNhanTam">
+                                        <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
+
+                                    </div>
+                                    <div class="modal-delivery-money">100000<span>đ</span></div>
+                                </div>
+                                <div class="modal-delivery-num">
+                                    <div class="modal-delivery-book">
+                                        <img src="images/DacNhanTam.png" alt="dacNhanTam">
+                                        <div><p>Đắc nhân tâm <br><span>SL: <span>1</span></p></div>
+
+                                    </div>
+                                    <div class="modal-delivery-money">100000<span>đ</span></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="modal-allMoney">
+                                <div class="modal-allMoney-body">
+                                    <div>
+                                        <div>Tổng Sản Phẩm</div>
+                                        <div>Phí vận chuyển</div>
+                                    </div>
+                                    <div>
+                                        <div><strong>200000<span>đ</span></strong></div>
+                                        <div style="float: right;"><strong>20000<span>đ</span></strong></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="modal-allMoney-All">
+                                    <strong>Tổng tiền</strong>
+                                    <strong >220000<span>đ</span></strong>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                        </div>
+
                     </div>
-                     
                 </div>
             </div>
-        </div>
         <jsp:include page="Footer.jsp"></jsp:include>
     </body>
 </html>

@@ -86,14 +86,6 @@ public final class managerAcc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                color: white;\n");
       out.write("                border: none;\n");
       out.write("            }\n");
-      out.write("            \n");
-      out.write("            .header-container1 h3{\n");
-      out.write("                font-size: 26px;\n");
-      out.write("            }\n");
-      out.write("            \n");
-      out.write("            .header-ketnoi1 span{\n");
-      out.write("                font-size: initial;\n");
-      out.write("            }\n");
       out.write("        </style>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
