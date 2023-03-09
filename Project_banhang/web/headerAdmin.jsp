@@ -49,6 +49,9 @@
                             <div class="header-Login header_Login-ht">
                                 <p style="margin-top: 5px;" class="header-Login-p"><a  href="#profile" >Tài khoản của tôi</a></p>
                                 <p class="header-Login-p"><a  href="profileAcc.jsp?content=3" class="address-button" >Đơn hàng của tôi</a></p>
+                                
+                                
+                                <!--login bằng Admin mới hiện-->
                                 <div class="manager-menu">
                                     <p class="header-Login-p manager-menu"><a  href="" class="address-button" >Quản lý cửa hàng</a></p>
 
@@ -82,6 +85,8 @@
             </div>
         </section>
 
+        
+        <!--hiển thị thông tin tài khoản-->
         <div class="modal-profile modal-overlay" id="profile">
             <a href="#" class="overlay-close"></a>
 

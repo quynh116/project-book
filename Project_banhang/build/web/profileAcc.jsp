@@ -21,6 +21,9 @@
 
             <div class="container-profile">
                 <div class="container-child">
+                    
+                    
+                    <!--Menu-->
                     <div class="profile-left">
                         <ul>
                             <a href="profileAcc.jsp?content=1" ><li class="menu-acc1"><img style="margin-right: 12px;" src="images/icons1/user1.png" alt="user"> Thông tin tài khoản</li></a>
@@ -28,6 +31,8 @@
                             <a href="profileAcc.jsp?content=3"  ><li class="menu-acc1"><img style="margin-right: 11px;" src="images/icons1/cart-removebg1-preview.png" alt="cart">Đơn hàng của tôi</li></a>
                         </ul>
                     </div>
+                    
+                    <!--trang đầu tiên chỉnh sửa thông tin cá nhân-->
                     <div class="profile-right" id="content1">
                         <h3>Thông tin cá nhân</h3>
                         <form action="#" method="post">
@@ -156,6 +161,8 @@
                                 <input type="submit" value="Lưu thay đổi" name="action"/>
                             </div>
                         </form>
+                        
+                        <!--Thay đổi mật khẩu-->
                         <div class="profile-pass">
                             <img src="images/icons1/120px-OOjs_UI_icon_lock.svg.png" alt="lock.svg">
                             <span>Thay đổi mật khẩu </span>
@@ -180,6 +187,8 @@
 
                         </div>
                     </div>
+                    
+                    <!--thay đổi địa chỉ-->
                     <div class="profile-right1" id="content2" style="display: none">
                         <div class="profile-right1-body">
                             <h3>Địa chỉ</h3>
@@ -210,6 +219,8 @@
                             </div>   
                         </div>
                     </div>
+                    
+                    <!--xem đơn hang đã đặt và đã hủy-->
                     <div class="profile-right2" id="content3" style="display: none">
                         <div class="profile-right2-body">
                             <h3>Đơn hàng của tôi</h3>
@@ -335,6 +346,8 @@
 
 
 
+        
+        <!--phần bình luận-->
             <div class="modal-profile modal-overlay" id="Comment">
                 <a href="#" class="overlay-close"></a>
 

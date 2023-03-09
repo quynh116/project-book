@@ -25,7 +25,7 @@
                         <div class="row">
                             <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
 
-                                <!-- Shopping cart table -->
+                                <!-- hiển thị sản phẩm trong giỏ hàng -->
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>
@@ -77,7 +77,7 @@
                                                     </form>
                                                 </td>
                                                 <td class="align-middle"><a href="#" class="text-dark">
-                                                        <button type="button" class="btn btn-danger">Delete</button>
+                                                        <button type="button" data-target="#deleteEmployeeModal" data-toggle="modal" class="btn btn-danger">Delete</button>
                                                     </a>
                                                 </td>
                                             </tr> 
@@ -90,6 +90,8 @@
                         </div>
 
                         <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                            
+                            <!--điền và hiển thị thông tin giao hang-->
                             <div class="col-lg-6">
                                 <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thông tin giao hàng</div>
                                 <div class="p-4">
@@ -121,6 +123,7 @@
                                 <div>Số ĐT: <span>0975099899</span></div>
                             </div>
                             <div class="col-lg-6">
+                                <!--hiển thị giá tiền chuyển đến trang thanh toán-->
                                 <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>
                                 <div class="p-4">
                                     <ul class="list-unstyled mb-4">
@@ -139,32 +142,33 @@
                 </div>
             </div>
         </div>
-        <div class="modal-profile modal-overlay" id="CartProduct">
-            <a href="#" class="overlay-close"></a>
-
-            <div class="modal_profile-body">
-                <a class="modal_close-btn" href="#">&times;</a>
-                <div class="modal-childBody">
-                    <div class="modal-left">
-                        <div class="modal-delivery">
-
+        
+        
+        <!--xóa sản phẩm-->
+        <div id="deleteEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">						
+                            <h4 class="modal-title">Xóa <strong>sản phẩm</strong></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
-                        <div class="modal-pay">
-
+                        <div class="modal-body">					
+                            <p>Bạn có muốn xóa sản phẩm không?</p>
+                            <p class="text-warning"><small>Sau khi xóa sẽ ko thể hoàn tác lại.</small></p>
                         </div>
-                    </div>
-                    <div class="modal-right">
-                        <div class="modal-address">
-
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            <input type="submit" class="btn btn-danger" value="Delete">
                         </div>
-                        <div class="modal-order">
-
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <a href="#" data-toggle="modal" data-target="#myModal">Mở modal</a>
 
+
+        
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

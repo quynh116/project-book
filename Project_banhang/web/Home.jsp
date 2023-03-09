@@ -38,6 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
+                    <!--Phần danh mục-->
                     <div class="card bg-light mb-3">
                         <div style="font-size: 18px;font-weight: 450; " class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> DANH MỤC</div>
                         <ul class="list-group category_block">
@@ -64,6 +65,7 @@
                 <div class="col-sm-9">
                     <div class="row">
                         
+                        <!--load sản phẩm-->
                         <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
                                 <div class="card ">
                                     <img style=" width: 180px;height: 250px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">

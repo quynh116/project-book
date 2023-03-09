@@ -81,6 +81,8 @@
 
 
                 <div class="">
+                    
+                    <!--form tìm kiếm tác giả thể loại và tên sách-->
                     <form action="" method="post">
                         <div class="manager-menu-product">
 
@@ -113,7 +115,7 @@
                     </form>
                 </div>
 
-
+                <!--load sản phẩm-->
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
@@ -185,6 +187,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- addproduct Modal HTML -->
         <div id="addEmployeeModal" class="modal fade" >
             <div class="modal-dialog modal-lg " >
@@ -290,6 +293,9 @@
                 </div>
             </div>
         </div>
+        
+        
+        
         <!-- Edit Modal HTML -->
 
         <div id="editEmployeeModal" class="modal fade" >
@@ -382,10 +388,7 @@
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea style="height: 400px" type="text" name="description" value="" class="form-control" required>Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Trong suốt nhiều thập kỷ tiếp theo và cho đến tận bây giờ, tác phẩm này vẫn chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành một sự kiện có một không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi thời đại.
-Đây là cuốn sách độc nhất về thể loại self-help sở hữu một lượng lớn người hâm mộ. Ngoài ra cuốn sách có doanh số bán ra cao nhất được tờ báo The New York Times bình chọn trong nhiều năm. Cuốn sách này không còn là một tác phẩm về nghệ thuật đơn thuần nữa mà là một bước thay đổi lớn trong cuộc sống của mỗi người.
-Nhờ có tầm hiểu biết rộng rãi và khả năng ‘ứng xử một cách nghệ thuật trong giao tiếp’ – Dale Carnegie đã viết ra một quyển sách với góc nhìn độc đáo và mới mẻ trong giao tiếp hàng ngày một cách vô cùng thú vị – Thông qua những mẫu truyện rời rạc nhưng lại đầy lý lẽ thuyết phục. Từ đó tìm ra những kinh nghiệm để đúc kết ra những nguyên tắc vô cùng ‘ngược ngạo’, nhưng cũng rất logic dưới cái nhìn vừa sâu sắc, vừa thực tế.
-Hơn thế nữa, Đắc Nhân Tâm còn đưa ra những nghịch lý mà từ lâu con người ta đã hiểu lầm về phương hướng giao tiếp trong mạng lưới xã hội, thì ra, người giao tiếp thông minh không phải là người có thể phát biểu ra những lời hay nhất, mà là những người học được cách mỉm cười, luôn biết cách lắng nghe, và khích lệ câu chuyện của người khác.
-Cuốn sách Đắc Nhân Tâm được chia ra làm 4 nội dung chính và mỗi phần cũng là một bài học về cuộc sống.
+
                                 </textarea>
                             </div>
 
@@ -399,6 +402,8 @@ Cuốn sách Đắc Nhân Tâm được chia ra làm 4 nội dung chính và m�
                 </div>
             </div>
         </div>
+        
+        
         <!-- Delete Modal HTML -->
         <div id="deleteEmployeeModal" class="modal fade">
             <div class="modal-dialog">

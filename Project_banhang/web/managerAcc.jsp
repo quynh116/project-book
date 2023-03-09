@@ -76,6 +76,8 @@
                         <div class="col-sm-6">
                             <h2>Quản lý <b>tài khoản</b></h2>
                         </div>
+                        
+                        <!--thêm mới hoặc xóa tài khoản-->
                         <div class="col-sm-6">
                             <a href="#addAccModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm mới tài khoản</span></a>
                             <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
@@ -90,6 +92,9 @@
                         <div><a href="#" onclick="showAcc(3)"class="menu">Tài khoản bị chặn</a></div>
                     </div>
                 </div>
+                
+                
+                <!--hiện tài khoản admin gốc giữ nguyên -->
                 <div class="manager-Acc-detail1 " id="Acc1" >
                     <table class="table table-striped table-hover">
                         <thead>
@@ -180,6 +185,9 @@
                         </tbody>
                     </table>
                 </div>
+                
+                
+                <!--hiển thị tài khoản hoạt động-->
                 <div class="manager-Acc-detail1" id="Acc2" style="display: none">
                     <table class="table table-striped table-hover">
                         <thead>
@@ -253,6 +261,8 @@
                         </tbody>
                     </table>
                 </div>
+            
+            <!--hiển thị tài khoản bị chặn-->
                 <div class="manager-Acc-detail2" id="Acc3" style="display: none">
                     <table class="table table-striped table-hover">
                         <thead>
@@ -305,6 +315,9 @@
                         </tbody>
                     </table>
                 </div>
+            
+            
+            <!--phân trang-->
                 <div class="clearfix">
                     <!--                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>-->
                     <ul class="pagination">

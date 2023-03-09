@@ -19,6 +19,8 @@
                 <div class="modal-childBody">
                     <div class="modal-left">
                         <div class="modal-delivery">
+                            
+                            <!--chọn hỉnh thức giao hang-->
                             <div class="modal-delivery-body">
                                 <h5>Chọn hình thức giao hàng</h5>
                                 <form class="modal-delivery-radio">
@@ -54,6 +56,9 @@
                             </div>
 
                         </div>
+                        
+                        
+                        <!--chọn hình thức thanh toán-->
                         <div class="modal-pay">
                             <div class="modal-pay-body">
                                 <h5>Chọn hình thức thanh toán</h5>
@@ -66,6 +71,8 @@
                         </div>
                     </div>
                     <div class="modal-right">
+                        
+                        <!--giao tới đâu-->
                         <div class="modal-address">
                             <div class="modal-address-body">
                                 <div class="modal-address-title" >
@@ -79,6 +86,8 @@
                             </div>    
                         </div>
                         <div class="modal-order">
+                            
+                            <!--thanh toán-->
                             <div class="modal-address-body">
 
                                 <div class="modal-address-title" >

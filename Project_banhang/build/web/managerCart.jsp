@@ -59,6 +59,8 @@
 
                                     </div>
                                 </div>
+                                
+                                <!--tìm kiếm từ ngày nào-->
                                 <div class="">
                                     <form action="" method="post">
                                         <button type="submit" class="btn btn-primary" name=""><i class="fa fa-search"></i></button>
@@ -91,6 +93,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <!--hiển thị đơn hàng-->
                         <table class="table table-striped table-hover">
                             <thead>
                                 <tr>
@@ -142,6 +146,8 @@
                                 </tr>
                             </tbody>
                         </table>
+                        
+                        <!--phân trang-->
                         <div class="clearfix">
 
                             <ul class="pagination">
@@ -161,6 +167,8 @@
 
 
             <!--modal cart-->
+            
+            <!--<hiển thị chi tiết-->
             <div class="modal fade" id="myModal">
                 <div class="modal-dialog ">
                     <div class="modal-content">

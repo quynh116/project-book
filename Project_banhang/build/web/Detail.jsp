@@ -18,7 +18,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/detail.css" rel="stylesheet" type="text/css"/>
         <style>
-
+            .img-item-child{
+                width: 68px;
+            }
         </style>
     </head>
     <body>
@@ -54,6 +56,8 @@
                                 <div class="row">
 
                                     <div class = "product-imgs col-sm-5">
+
+                                        <!--load ảnh-->
                                         <div class = "img-display">
                                             <div class = "img-showcase">
                                                 <img src = "images/Rectangle 30.png" alt = "book image">
@@ -64,30 +68,40 @@
                                         </div>
                                         <div class = "img-select">
                                             <div class = "img-item">
-                                                <a href = "#" data-id = "1">
-                                                    <img src = "images/DacNhanTam.png" alt = "book image">
-                                                </a>
+                                                <div class="img-item-child">
+                                                    <a href = "#" data-id = "1">
+                                                        <img src = "images/Rectangle 30.png" alt = "book image">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class = "img-item">
-                                                <a href = "#" data-id = "2">
-                                                    <img src = "images/dacnhantam1-1.png" alt = "shoe image">
-                                                </a>
+                                                <div class="img-item-child">
+                                                    <a href = "#" data-id = "2">
+                                                        <img src = "images/dacnhantam1-1.png" alt = "shoe image">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class = "img-item">
-                                                <a href = "#" data-id = "3">
-                                                    <img src = "images/DacNhanTam.png" alt = "book image">
-                                                </a>
+                                                <div class="img-item-child">
+                                                    <a href = "#" data-id = "3">
+                                                        <img src = "images/DacNhanTam.png" alt = "book image">
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div class = "img-item">
-                                                <a href = "#" data-id = "4">
-                                                    <img src = "images/DacNhanTam.png" alt = "book image">
-                                                </a>
+                                                <div class="img-item-child">
+                                                    <a href = "#" data-id = "4">
+                                                        <img src = "images/DacNhanTam.png" alt = "book image">
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <aside class="col-sm-7">
                                         <article class="card-body p-5">
+                                            
+                                            <!--load sách-->
                                             <h3 class="title mb-3">Đắc Nhân Tâm</h3>
                                             <div>Nhà cung cấp: <span class="card-span">First New</span></div>
                                             <div>Nhà xuất bản: <span class="card-span">NXB Tổng Hợp TPHCM</span></div>
@@ -137,7 +151,7 @@
 
                             </div> <!-- card.// -->
 
-
+                            <!--load chi tiết sách-->
                         </div>
                         <div class="container">
                             <div class="card-detail card-detail-product">
@@ -181,6 +195,10 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        <!--hiện phần bình luận-->
+                        
                         <div class="container">
                             <div class="card-detail2 ">
                                 <div class="title-sanpham1">
@@ -231,6 +249,9 @@
                                 </div>
                             </div>
                         </div>    
+                        
+                        
+                        <!--sản phẩm liên quan-->
                         <div class="container">
                             <div class="title-sanpham">
                                 <h3>Sản phẩm liên quan</h3>
