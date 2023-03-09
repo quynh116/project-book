@@ -231,7 +231,7 @@
                                                     <div class="profile-right2-nameBook">
                                                         <h6><a href="Detail.jsp">Đắc nhân tâm</a></h6>
                                                         <span>x<strong>1</strong></span>
-                                                        <a class="profile-right2-link" href="#">Nhận xét</a>
+                                                        <a class="profile-right2-link" href="#Comment">Nhận xét</a>
                                                     </div>
                                                 </div>
                                                 <div ><span>100.000<span>đ</span></span></div>
@@ -329,6 +329,36 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal-profile modal-overlay" id="Comment">
+                <a href="#" class="overlay-close"></a>
+
+                <div class="modal_profile-body">
+                    <div class="modal-header-comment">
+                        <div class="modal-comment-child">
+                            <div class="modal-comment-img">
+                                <img src="images/Rectangle 30.png" alt="dac nhan tam.png">
+                            </div>
+                            <div>
+                                <strong>Đắc nhân tâm</strong><br>
+                                <span>Dale Carnegie</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="modal_close-btn" href="#">&times;</a>
+                        </div>
+                    </div>
+                    <div class="modal-comment-body">
+                        <form action="" method="post">
+                            <span>Đánh giá sản phẩm</span><br>
+                            <textarea style="height: 200px" name="txtcomment" class="form-comment" required placeholder="Hãy chia sẻ cảm nhận"></textarea><br>
+                            <input type="submit" name="" value="Gửi đánh giá">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -436,7 +466,7 @@
                 document.getElementById('content1').style.display = 'none';
                 document.getElementById('content2').style.display = 'block';
                 document.getElementById('content3').style.display = 'none';
-            }else if (contentId === '3') {
+            } else if (contentId === '3') {
                 document.getElementById('content1').style.display = 'none';
                 document.getElementById('content2').style.display = 'none';
                 document.getElementById('content3').style.display = 'block';
