@@ -8,44 +8,115 @@ and open the template in the editor.
     Author     : Admin
 */
 body{
-    font-family: sans-serif;
+
     margin: 0;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+
+.header-body{
+    height: 56px;
+}
+.header-container1 {
+    width: 100%;
+    height: 56px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    z-index: 1;
 }
 
-h3 {
-  margin: 0;
+
+
+.header-container1-right{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
 }
 
-.search {
-  display: flex;
-  align-items: center;
+.header-ketnoi1{
+    margin-right: 40px;
 }
 
-.search input[type="text"] {
-  padding: 5px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 3px;
+.header-container1 h3 {
+    margin: 0;
 }
 
-.search i.fa {
-  font-size: 20px;
-  color: #fff;
+.search-header {
+    display: flex;
+    align-items: center;
+    margin-right: 21px;
 }
 
-.cart i.fa,.header-ketnoi i.fa {
-  font-size: 20px;
-  color: #fff;
+.cart-header{
+    border-radius: 5px;
+    
 }
 
-.clear {
-  clear: both;
+.cart-header a{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    padding: 6px 2px;
+}
+
+.cart-header span{
+        padding: 0 4px;
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+
+.cart-header:hover{
+    background-color: #535A62;
+    text-decoration: none;
+}
+
+.search-header input{
+    padding: 4px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 400px;
+}
+
+.search-header button {
+   background-color: #5a6268;
+    color: white;
+    padding: 4px 8px;
+    margin-left: -14px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}
+
+.cart-header i.fa {
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-ketnoi i.fa {
+    font-size: 16px;
+    color: #fff;
+}
+
+.manager-menu{
+    position: relative;
+}
+
+.manager-menu-body{
+    background-color: white;
+    min-width: 150px;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    border-radius: 3px;
+    display: none;
+}
+
+.manager-menu:hover .manager-menu-hover{
+    display: block;
 }

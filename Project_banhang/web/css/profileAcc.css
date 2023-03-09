@@ -98,9 +98,11 @@ body {
     margin-left: -60px;
 }
 
-.profile-left ul li:hover{
+.menu-acc1:hover,.menu-acc1.active{
     background-color: #CDCACA;
     color: white;
+    text-decoration: none;
+    border: none;
 }
 .profile-left ul li{
     list-style: none;
@@ -119,7 +121,7 @@ body {
     padding: 20px;
     background-color: white;
     width: 700px;
-    height: 700px;
+    height: 770px;
     border-radius: 10px;
 }
 
@@ -206,7 +208,7 @@ body {
 }
 
 .edit-form{
-    margin-bottom: -257px;
+    margin-bottom: -355px;
     margin-left: -71px;
     border: 1px solid #ccc;
     padding: 10px;

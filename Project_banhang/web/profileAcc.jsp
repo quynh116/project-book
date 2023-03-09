@@ -9,21 +9,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Profile Page</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo-removebg-preview.png"/>
         <link href="css/profileAcc.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
-        <jsp:include page="Menu.jsp"></jsp:include>
+        <jsp:include page="headerAdmin.jsp"></jsp:include>
 
             <div class="container-profile">
                 <div class="container-child">
                     <div class="profile-left">
                         <ul>
-                            <a href="#" onclick="showContent(1)"><li><img style="margin-right: 12px;" src="images/icons1/user1.png" alt="user"> Thông tin tài khoản</li></a>
-                            <a href="#" onclick="showContent(2)"><li><img style="margin-right: 21px;"  src="images/icons1/address1.png-removebg1-preview.png" alt="address">Địa chỉ của tôi</li></a>
-                            <a href="#" onclick="showContent(3)"><li><img style="margin-right: 11px;" src="images/icons1/cart-removebg1-preview.png" alt="cart">Đơn hàng của tôi</li></a>
+                            <a href="profileAcc.jsp?content=1" ><li class="menu-acc1"><img style="margin-right: 12px;" src="images/icons1/user1.png" alt="user"> Thông tin tài khoản</li></a>
+                            <a href="profileAcc.jsp?content=2" ><li class="menu-acc1"><img style="margin-right: 21px;"  src="images/icons1/address1.png-removebg1-preview.png" alt="address">Địa chỉ của tôi</li></a>
+                            <a href="profileAcc.jsp?content=3"  ><li class="menu-acc1"><img style="margin-right: 11px;" src="images/icons1/cart-removebg1-preview.png" alt="cart">Đơn hàng của tôi</li></a>
                         </ul>
                     </div>
                     <div class="profile-right" id="content1">
@@ -38,7 +40,7 @@
                                         <div class="avatar-preview">
 
                                             <img id="selected-avatar"
-                                                 src="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                 src="images/avatar/avatar1.png"
                                                  alt="Selected Avatar">
 
                                         </div>
@@ -52,78 +54,78 @@
                                                     <div class="avatar-row">
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                   value="images/avatar/avatar1.png"
                                                                    id="avatar1">
                                                             <label for="avatar1"><img
-                                                                    src="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                    src="images/avatar/avatar1.png"
                                                                     alt="Avatar 1"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                   value="images/avatar/avatar2..jpg"
                                                                    id="avatar2">
                                                             <label for="avatar2"><img
-                                                                    src="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                    src="images/avatar/avatar2..jpg"
                                                                     alt="Avatar 2"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                   value="images/avatar/avatar3.jpg"
                                                                    id="avatar3">
                                                             <label for="avatar3"><img
-                                                                    src="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                    src="images/avatar/avatar3.jpg"
                                                                     alt="Avatar 1"></label>
                                                         </div>
                                                     </div>
                                                     <div class="avatar-row">
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                   value="images/avatar/avatar4.jpg"
                                                                    id="avatar4">
                                                             <label for="avatar4"><img
-                                                                    src="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                    src="images/avatar/avatar4.jpg"
                                                                     alt="Avatar 2"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                   value="images/avatar/avatar5.jpg"
                                                                    id="avatar5">
                                                             <label for="avatar5"><img
-                                                                    src="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                    src="images/avatar/avatar5.jpg"
                                                                     alt="Avatar 1"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                   value="images/avatar/avatar6.jpg"
                                                                    id="avatar6">
                                                             <label for="avatar6"><img
-                                                                    src="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                    src="images/avatar/avatar6.jpg"
                                                                     alt="Avatar 1"></label>
                                                         </div>
                                                     </div>
                                                     <div class="avatar-row">
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                   value="images/avatar/avatar7.jpg"
                                                                    id="avatar7">
                                                             <label for="avatar7"><img
-                                                                    src="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                    src="images/avatar/avatar7.jpg"
                                                                     alt="Avatar 2"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                   value="images/avatar/avatar8.jpg"
                                                                    id="avatar8">
                                                             <label for="avatar8"><img
-                                                                    src="https://i.pinimg.com/236x/34/db/cb/34dbcb5b6d087d70821c542b94db762e.jpg"
+                                                                    src="images/avatar/avatar8.jpg"
                                                                     alt="Avatar 1"></label>
                                                         </div>
                                                         <div class="avatar-item">
                                                             <input type="radio" name="avatar"
-                                                                   value="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                   value="images/avatar/avatar9.jpg"
                                                                    id="avatar9">
                                                             <label for="avatar9"><img
-                                                                    src="https://batterydown.vn/wp-content/uploads/2022/05/hinh-anh-avatar-de-thuong-750x600.jpg"
+                                                                    src="images/avatar/avatar9.jpg"
                                                                     alt="Avatar 2"></label>
                                                         </div>
                                                     </div>
@@ -162,7 +164,11 @@
                             <a href="#form-pass" class="edit-button1">Thay đổi</a>
                             <div class="edit-form" style="display: none;" id="form-pass">
                                 <form action="#" method="post">
-                                    <label for="pas">Mật khẩu mới</label>
+                                    <label for="pas">Mật khẩu hiện tại</label>
+                                    <br><input type="password" id="name" name="name" placeholder=""><br>
+                                    <a style="float: right;font-size: 13px; text-decoration: none;" href="">Quên mật khẩu</a>
+                                    <br>
+                                    <label style="margin-top: 10px;" for="pas">Mật khẩu mới</label>
                                     <br><input type="password" id="name" name="name" placeholder=""><br>
                                     <br><label for="pass">Nhập lại mật khẩu mới</label>
                                     <br><input type="password" id="email" name="email" placeholder=""><br>
@@ -209,9 +215,9 @@
                             <h3>Đơn hàng của tôi</h3>
                             <div class="profile-right2-child">
                                 <div class="profile-right2-menu">
-                                    <div><a href="#Cart1" onclick="showCart(1)">Tất cả đơn</a></div>
-                                    <div><a href="#Cart2" onclick="showCart(2)">Chờ thanh toán</a></div>
-                                    <div><a href="#Cart3" onclick="showCart(3)">Hoàn thành</a></div>
+                                    <div><a href="#" onclick="showCart(1)">Tất cả đơn</a></div>
+                                    <div><a href="#" onclick="showCart(2)">Đã hủy</a></div>
+                                    <div><a href="#" onclick="showCart(3)">Hoàn thành</a></div>
                                 </div>
                                 <br>
                                 <div class="profile-right2-delatlCart" id="Cart1">
@@ -248,7 +254,7 @@
                                     </div>
                                     <div class="profile-right2-product" >
                                         <br>
-                                        <div class="profile-right2-title">Trong giỏ hang</div>
+                                        <div class="profile-right2-title">Sản phẩm đã hủy</div>
                                         <div >
                                             <hr>
                                             <div class="profile-right2-productDetail">
@@ -257,7 +263,7 @@
                                                     <div class="profile-right2-nameBook">
                                                         <h6><a href="Detail.jsp">Đắc nhân tâm</a></h6>
                                                         <span>x<strong>1</strong></span>
-                                                        <a class="profile-right2-link" href="CartDetail.jsp">Thanh toán</a>
+                                                        <a class="profile-right2-link" href="Detail.jsp">Mua lại</a>
                                                     </div>
                                                 </div>
                                                 <div ><span>100.000<span>đ</span></span></div>
@@ -265,11 +271,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
+
+
                                 <div class="profile-right2-inCart" id="Cart2" style="display: none">
                                     <div class="profile-right2-product">
-                                        <div class="profile-right2-title">Trong giỏ hang</div>
+                                        <div class="profile-right2-title">Sản phẩm đã hủy</div>
                                         <div >
                                             <hr>
                                             <div class="profile-right2-productDetail">
@@ -278,7 +284,7 @@
                                                     <div class="profile-right2-nameBook">
                                                         <h6><a href="Detail.jsp">Đắc nhân tâm</a></h6>
                                                         <span>x<strong>1</strong></span>
-                                                        <a class="profile-right2-link" href="#">Thanh toán</a>
+                                                        <a class="profile-right2-link" href="#">Mua lại</a>
                                                     </div>
                                                 </div>
                                                 <div ><span>100.000<span>đ</span></span></div>
@@ -286,8 +292,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
+
+
                                 <div class="profile-right2-finish" id="Cart3" style="display: none">
                                     <div class="profile-right2-product">
                                         <div class="profile-right2-title">Mua thành công</div>
@@ -338,6 +344,8 @@
             });
 
 
+
+
             function showContent(num) {
                 // Ẩn tất cả các nội dung
                 document.getElementById("content1").style.display = "none";
@@ -345,6 +353,19 @@
                 document.getElementById("content3").style.display = "none";
                 // Hiển thị nội dung tương ứng với liên kết được nhấp vào
                 document.getElementById("content" + num).style.display = "block";
+
+                var menuElements = document.getElementsByClassName("menu-acc1");
+                for (var i = 0; i < menuElements.length; i++) {
+                    menuElements[i].classList.remove("active");
+                }
+                menuElements[num - 1].classList.add("active");
+
+                document.getElementById("content2").addEventListener("submit", function (event) {
+                    // ngăn chặn hành động mặc định của trình duyệt
+                    event.preventDefault();
+                    // thực hiện xử lý form
+                    // ...
+                });
             }
 
             function showCart(num) {
@@ -401,6 +422,27 @@
                 };
             }
         </script>
+        <script>
+            // Lấy giá trị tham số "content" từ URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const contentId = urlParams.get('content');
+
+            // Hiển thị nội dung tương ứng
+            if (contentId === '1') {
+                document.getElementById('content1').style.display = 'block';
+                document.getElementById('content2').style.display = 'none';
+                document.getElementById('content3').style.display = 'none';
+            } else if (contentId === '2') {
+                document.getElementById('content1').style.display = 'none';
+                document.getElementById('content2').style.display = 'block';
+                document.getElementById('content3').style.display = 'none';
+            }else if (contentId === '3') {
+                document.getElementById('content1').style.display = 'none';
+                document.getElementById('content2').style.display = 'none';
+                document.getElementById('content3').style.display = 'block';
+            }
+        </script>
+
 
         <script src="js/profileAcc.js" type="text/javascript"></script>
     </body>

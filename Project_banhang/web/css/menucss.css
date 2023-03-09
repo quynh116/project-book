@@ -43,7 +43,8 @@ and open the template in the editor.
     width: 160px;
     display: flex;
     justify-content: center;
-    align-items: center;      
+    align-items: center; 
+    margin-bottom: -3px;
 }       
 
 .menu-ketnoi{
@@ -56,7 +57,7 @@ and open the template in the editor.
     min-width: 150px;
     position: absolute;
     left: 0;
-    top: 129%;
+    top: 123%;
     border-radius: 3px;
     display: none;
 }
@@ -127,9 +128,10 @@ and open the template in the editor.
 .modal_close-btn{
     font-size: xx-large;
     position: absolute;
-    top: -11px;
+    top: -4px;
     right: 6px;
     color: black;
+    text-decoration: none;
 }
 
 .modal_close-btn:hover{
@@ -175,9 +177,7 @@ and open the template in the editor.
 .profile-info img{
     width: 25px;
 }
-.profile-info span{
-    padding-left: 5px;
-}
+
 .profile-info h2 {
     margin: 0;
 }
@@ -210,8 +210,8 @@ and open the template in the editor.
 .edit-button {
     background-color: #2196F3;
 }
-.edit-form-profile span{
-    padding-left: 5px;
+.profile-info-body img{
+    margin-right: 10px;
 }
 .save-button {
     background-color: #4CAF50;
@@ -247,7 +247,6 @@ and open the template in the editor.
 }
 
 .profile-info-email img{
-    margin-right: 6px;
     height: 26px;
 }
 
@@ -260,5 +259,19 @@ and open the template in the editor.
     word-wrap: break-word;
     font-size: unset;
     font-weight: 700;
-    max-width: 234px;
+    max-width: 200px;
+}
+
+.profile-info-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-info-link a{
+        text-decoration: none;
+    border: 1px solid;
+    padding: 5px 10px;
+    font-size: large;
+    border-radius: 20px;
 }

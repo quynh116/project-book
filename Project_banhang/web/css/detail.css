@@ -177,6 +177,8 @@
 .product-imgs img{
     width: 100%;
     display: block;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .img-display{
     overflow: hidden;
@@ -191,10 +193,9 @@
 }
 .img-select{
     display: flex;
-    padding-left: 31px;
+    justify-content: space-between;
 }
 .img-item{
-    margin: 0.3rem;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),

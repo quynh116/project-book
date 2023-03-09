@@ -15,32 +15,36 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-         <link href="css/style.css" rel="stylesheet" type="text/css"/>
-         <link href="css/detail.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/detail.css" rel="stylesheet" type="text/css"/>
         <style>
-            
+
         </style>
     </head>
     <body>
-        <jsp:include page="Menu.jsp"></jsp:include>
+        <jsp:include page="headerAdmin.jsp"></jsp:include>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card bg-light mb-3">
-                            <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
-                            <ul class="list-group category_block">
-                            <c:forEach items="${ALLCate}" var="o">
-                                <li class="list-group-item text-white"><a href="#">${o.name}</a></li>
-                            </c:forEach>
+                   <div class="col-sm-3">
+                    <div class="card bg-light mb-3">
+                        <div style="font-size: 18px;font-weight: 450; " class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> DANH MỤC</div>
+                        <ul class="list-group category_block">
+                            <li class="list-group-item text-white"><a href="#">Sách Bán Chạy</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Mới Nhất</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Thiếu Nhi</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Văn Học</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Kỹ Năng Sống</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Bán Chạy</a></li>
                         </ul>
                     </div>
                     <div class="card bg-light mb-3">
-                        <div class="card-header bg-success text-white text-uppercase">Last product</div>
+                        <div class="card-header bg-success text-white text-uppercase text-center">SÁCH YÊU THÍCH NHẤT</div>
                         <div class="card-body">
-                            <img class="img-fluid" src="${last.image}" />
-                            <h5 class="card-title">${last.name}</h5>
-                            <p class="card-text">${last.description}</p>
-                            <p class="bloc_left_price">${last.price} $</p>
+                            <img style="" class="img-fluid" src="images/Rectangle 30.png" />
+                            <h5 class="card-title">Đắc Nhân Tâm </h5>
+                            <p class="card-text ">How to win friends and Influence People của Dale Carnegie là 
+                                quyển sách nổi tiếng nhất, bán chạy nhất và có tầm ảnh hưởng nhất của mọi thời đại.</p>
+                            <p class="bloc_left_price">100.000đ</p>
                         </div>
                     </div>
                 </div>
@@ -48,63 +52,63 @@
                     <div class="container">
                         <div class="card-detail">
                             <div class="row">
-                                
+
                                 <div class = "product-imgs col-sm-5">
                                     <div class = "img-display">
-                                      <div class = "img-showcase">
-                                        <img src = "images/Rectangle 30.png" alt = "book image">
-                                        <img src = "images/dacnhantam1.png" alt = "book image">
-                                        <img src = "images/Rectangle 30.png" alt = "book image">
-                                        <img src = "images/Rectangle 30.png" alt = "book image">
-                                      </div>
+                                        <div class = "img-showcase">
+                                            <img src = "images/Rectangle 30.png" alt = "book image">
+                                            <img src = "images/dacnhantam1.png" alt = "book image">
+                                            <img src = "images/Rectangle 30.png" alt = "book image">
+                                            <img src = "images/Rectangle 30.png" alt = "book image">
+                                        </div>
                                     </div>
                                     <div class = "img-select">
-                                      <div class = "img-item">
-                                        <a href = "#" data-id = "1">
-                                          <img src = "images/DacNhanTam.png" alt = "book image">
-                                        </a>
-                                      </div>
-                                      <div class = "img-item">
-                                        <a href = "#" data-id = "2">
-                                            <img src = "images/dacnhantam1-1.png" alt = "shoe image">
-                                        </a>
-                                      </div>
-                                      <div class = "img-item">
-                                        <a href = "#" data-id = "3">
-                                          <img src = "images/DacNhanTam.png" alt = "book image">
-                                        </a>
-                                      </div>
-                                      <div class = "img-item">
-                                        <a href = "#" data-id = "4">
-                                          <img src = "images/DacNhanTam.png" alt = "book image">
-                                        </a>
-                                      </div>
+                                        <div class = "img-item">
+                                            <a href = "#" data-id = "1">
+                                                <img src = "images/DacNhanTam.png" alt = "book image">
+                                            </a>
+                                        </div>
+                                        <div class = "img-item">
+                                            <a href = "#" data-id = "2">
+                                                <img src = "images/dacnhantam1-1.png" alt = "shoe image">
+                                            </a>
+                                        </div>
+                                        <div class = "img-item">
+                                            <a href = "#" data-id = "3">
+                                                <img src = "images/DacNhanTam.png" alt = "book image">
+                                            </a>
+                                        </div>
+                                        <div class = "img-item">
+                                            <a href = "#" data-id = "4">
+                                                <img src = "images/DacNhanTam.png" alt = "book image">
+                                            </a>
+                                        </div>
                                     </div>
-                                  </div>
-                                
+                                </div>
+
                                 <aside class="col-sm-7">
                                     <article class="card-body p-5">
                                         <h3 class="title mb-3">Đắc Nhân Tâm</h3>
                                         <div>Nhà cung cấp: <span class="card-span">First New</span></div>
                                         <div>Nhà xuất bản: <span class="card-span">NXB Tổng Hợp TPHCM</span></div>
                                         <div>Tác giả: <span class="card-span">Dale Carnegie</span></div>
-                                        
-<!--                                        <div class="Product-rating">
-                                            <i class="fa-icons fa-light fa-star"></i>
-                                            <i class="fa fa-light fa-star"></i>
-                                            <i class="fa fa-light fa-star"></i>
-                                            <i class="fa fa-light fa-star"></i>
-                                            <i class="fa fa-light fa-star"></i>
-                                            
-                                            <span>(4)</span>
-                                        </div>-->
+
+                                        <!--                                        <div class="Product-rating">
+                                                                                    <i class="fa-icons fa-light fa-star"></i>
+                                                                                    <i class="fa fa-light fa-star"></i>
+                                                                                    <i class="fa fa-light fa-star"></i>
+                                                                                    <i class="fa fa-light fa-star"></i>
+                                                                                    <i class="fa fa-light fa-star"></i>
+                                                                                    
+                                                                                    <span>(4)</span>
+                                                                                </div>-->
                                         <p class="price-detail"> 
                                             <span class="price- "> 
                                                 <span class="">100000</span><span class="">đ</span>
                                             </span> 
                                             <!--<span>/per kg</span>--> 
                                         </p> <!-- price-detail-wrap .// -->
-                                        
+
 
 
                                         <hr>
@@ -121,7 +125,7 @@
                                                     </dd>
                                                 </dl>  <!-- item-property .// -->
                                             </div> <!-- col.// -->
-                                            
+
                                         </div> <!-- row.// -->
                                         <hr>
                                         <a href="#" class="btn-price btn btn-lg btn-outline-primary text-uppercase"> Buy now </a>
@@ -129,70 +133,11 @@
                                     </article> <!-- card-body.// -->
                                 </aside> <!-- col.// -->
                             </div> <!-- row.// -->
-                            
-                            
+
+
                         </div> <!-- card.// -->
-                        <div class="title-sanpham">
-                            <h3>Sản phẩm liên quan</h3>
-                        </div>
-                            <hr>
-                            <div class="row">
-                                <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
-                                <div class="card ">
-                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
-                                    <div style="margin-top: -15px;" class="card-body">
-                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
-                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
-                                        <div style="margin-top: -10px;" class="row">
-                                            <div style="width: 50px;padding-right: 5px;" class="col">
-                                                
-                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
-                                            </div>
-                                            <div style="width: 100%; margin-left: -15px;" class="col">
-                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
-                                <div class="card ">
-                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
-                                    <div style="margin-top: -15px;" class="card-body">
-                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
-                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
-                                        <div style="margin-top: -10px;" class="row">
-                                            <div style="width: 50px;padding-right: 5px;" class="col">
-                                                
-                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
-                                            </div>
-                                            <div style="width: 100%; margin-left: -15px;" class="col">
-                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
-                                <div class="card ">
-                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
-                                    <div style="margin-top: -15px;" class="card-body">
-                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
-                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
-                                        <div style="margin-top: -10px;" class="row">
-                                            <div style="width: 50px;padding-right: 5px;" class="col">
-                                                
-                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
-                                            </div>
-                                            <div style="width: 100%; margin-left: -15px;" class="col">
-                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            
+                        
+
                     </div>
                     <div class="container">
                         <div class="card-detail card-detail-product">
@@ -230,28 +175,84 @@
                                 <p>
                                     Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Trong suốt nhiều thập kỷ tiếp theo và cho đến tận bây giờ, tác phẩm này vẫn chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành một sự kiện có một không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi thời đại.<br><br>
 
-                                    Đây là cuốn sách độc nhất về thể loại self-help sở hữu một lượng lớn người hâm mộ. Ngoài ra cuốn sách có doanh số bán ra cao nhất được tờ báo The New York Times bình chọn trong nhiều năm. Cuốn sách này không còn là một tác phẩm về nghệ thuật đơn thuần nữa mà là một bước thay đổi lớn trong cuộc sống của mỗi người.<br><br>
-
-                                    Nhờ có tầm hiểu biết rộng rãi và khả năng ‘ứng xử một cách nghệ thuật trong giao tiếp’ – Dale Carnegie đã viết ra một quyển sách với góc nhìn độc đáo và mới mẻ trong giao tiếp hàng ngày một cách vô cùng thú vị – Thông qua những mẫu truyện rời rạc nhưng lại đầy lý lẽ thuyết phục. Từ đó tìm ra những kinh nghiệm để đúc kết ra những nguyên tắc vô cùng ‘ngược ngạo’, nhưng cũng rất logic dưới cái nhìn vừa sâu sắc, vừa thực tế.<br><br>
-
-                                    Hơn thế nữa, Đắc Nhân Tâm còn đưa ra những nghịch lý mà từ lâu con người ta đã hiểu lầm về phương hướng giao tiếp trong mạng lưới xã hội, thì ra, người giao tiếp thông minh không phải là người có thể phát biểu ra những lời hay nhất, mà là những người học được cách mỉm cười, luôn biết cách lắng nghe, và khích lệ câu chuyện của người khác.
-                                    Cuốn sách Đắc Nhân Tâm được chia ra làm 4 nội dung chính và mỗi phần cũng là một bài học về cuộc sống.
 
 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="container">
+                        <div class="title-sanpham">
+                            <h3>Sản phẩm liên quan</h3>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
+                                <div class="card ">
+                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
+                                    <div style="margin-top: -15px;" class="card-body">
+                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
+                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
+                                        <div style="margin-top: -10px;" class="row">
+                                            <div style="width: 50px;padding-right: 5px;" class="col">
 
+                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
+                                            </div>
+                                            <div style="width: 100%; margin-left: -15px;" class="col">
+                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
+                                <div class="card ">
+                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
+                                    <div style="margin-top: -15px;" class="card-body">
+                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
+                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
+                                        <div style="margin-top: -10px;" class="row">
+                                            <div style="width: 50px;padding-right: 5px;" class="col">
 
+                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
+                                            </div>
+                                            <div style="width: 100%; margin-left: -15px;" class="col">
+                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
+                                <div class="card ">
+                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
+                                    <div style="margin-top: -15px;" class="card-body">
+                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
+                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
+                                        <div style="margin-top: -10px;" class="row">
+                                            <div style="width: 50px;padding-right: 5px;" class="col">
+
+                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
+                                            </div>
+                                            <div style="width: 100%; margin-left: -15px;" class="col">
+                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
-        <!-- Footer -->
-        <jsp:include page="Footer.jsp"></jsp:include>
-        
-        <script src="js/detail.js" type="text/javascript"></script>
-    </body>
+    </div>
+</div>
+<!-- Footer -->
+<jsp:include page="Footer.jsp"></jsp:include>
+
+<script src="js/detail.js" type="text/javascript"></script>
+</body>
 </html>

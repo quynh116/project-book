@@ -62,9 +62,45 @@
             .filter-group input{
                 border-radius: 5px 0 0 5px;
             }
+            
+            .header-container1 h3{
+                font-size: 26px;
+            }
+            
+            .header-ketnoi1 span{
+                font-size: initial;
+            }
+            
+            .table-wrapper{
+                margin-top: 0;
+            }
+            .header-Login p a{
+                font-size: 16px;
+            }
+            
+            .search-header input[type="text"] {
+                padding: 7px 5px;
+            }
+            
+            .search-header i{
+                font-size: 15px;
+                padding-top: 1px;
+                padding-bottom: 5px;
+            }
+            thead tr th{
+                font-size: 16px;
+            }
+            
+            tbody tr td{
+                font-size: 13px;
+            }
+            p{
+                font-size: 13px;
+            }
         </style>
     <body>
-
+        <jsp:include page="headerAdmin.jsp"></jsp:include>
+        
         <div class="container">
             <div class="table-wrapper">
                 <div class="table-title">
@@ -420,9 +456,12 @@ Cuốn sách Đắc Nhân Tâm được chia ra làm 4 nội dung chính và m�
                 </div>
             </div>
         </div>
+        
+         <jsp:include page="Footer.jsp"></jsp:include>
+        
         <script src="js/manager.js" type="text/javascript"></script>
         <script>
-
+            
         </script>
     </body>
 </html>

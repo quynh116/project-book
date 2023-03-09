@@ -22,11 +22,7 @@
     </head>
     <body>
         <!--begin of menu-->
-        <jsp:include page="Menu.jsp"></jsp:include>
-        
-        
-        
-        
+        <jsp:include page="headerAdmin.jsp"></jsp:include>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -46,7 +42,7 @@
                         <div style="font-size: 18px;font-weight: 450; " class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> DANH MỤC</div>
                         <ul class="list-group category_block">
                             <li class="list-group-item text-white"><a href="#">Sách Bán Chạy</a></li>
-                            <li class="list-group-item text-white"><a href="#">Sách MỚi Nhất</a></li>
+                            <li class="list-group-item text-white"><a href="#">Sách Mới Nhất</a></li>
                             <li class="list-group-item text-white"><a href="#">Sách Thiếu Nhi</a></li>
                             <li class="list-group-item text-white"><a href="#">Sách Văn Học</a></li>
                             <li class="list-group-item text-white"><a href="#">Sách Kỹ Năng Sống</a></li>
@@ -70,7 +66,7 @@
                         
                         <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
                                 <div class="card ">
-                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
+                                    <img style=" width: 180px;height: 250px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
                                     <div style="margin-top: -15px;" class="card-body">
                                         <h4 class="card-title show_txt"><a href="Detail.jsp" title="View Product">Đắc Nhân Tâm</a></h4>
                                         <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>

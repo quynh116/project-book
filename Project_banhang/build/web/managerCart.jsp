@@ -21,7 +21,10 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <style>
-
+            .header-ketnoi{
+                display: flex;
+    align-items: center;
+            }
         </style>
         <script>
             $(document).ready(function () {
@@ -30,6 +33,7 @@
         </script>
     </head>
     <body>
+        <jsp:include page="headerAdmin.jsp"></jsp:include>
         <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
@@ -55,14 +59,14 @@
                                     <button type="submit" class="btn btn-primary" name=""><i class="fa fa-search"></i></button>
                                     <div class="filter-group">
                                         <label for="start">Từ ngày:</label>
-                                        <input type="date" id="start" name="start" class="form-control">
+                                        <input type="date" id="start" name="start" class="form-control" style="width: 150px;">
 
                                         <label for="end">Đến ngày:</label>
-                                        <input type="date" id="end" name="end" class="form-control">
+                                        <input type="date" id="end" name="end" class="form-control" style="width: 150px;">
                                     </div>
                                     <div class="filter-group">
                                         <label>Địa điểm</label>
-                                        <select class="form-control">
+                                        <select class="form-control" style="width: 180px;">
                                             <option>Tất cả</option>
                                             <option>Hồ Chí Minh</option>
                                             <option>Đồng nai</option>
@@ -71,7 +75,7 @@
                                     </div>
                                     <div class="filter-group">
                                         <label>Trạng thái</label>
-                                        <select class="form-control">
+                                        <select class="form-control" style="width: 170px;">
                                             <option>Bất kỳ</option>
                                             <option>Hoàn thành</option>
                                             <option>Đang giao</option>
@@ -228,14 +232,17 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
                     </div>
-
+                     
                 </div>
             </div>
         </div>
+        <jsp:include page="Footer.jsp"></jsp:include>
     </body>
 </html>
