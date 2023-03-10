@@ -89,7 +89,7 @@ input:-moz-placeholder {
     color:    #b5b5b5;
 }
 
-#signup .inputs input[type=text], input[type=password],input[type=number], textarea[type=text],.Add-acc {
+#signup .inputs input[type=text], input[type=password],input[type=number], textarea[type=text],.Add-acc, input[type=email],input[type=text] {
     background: #f5f5f5;
     font-size: 0.8rem;
     -moz-border-radius: 3px;
@@ -165,7 +165,6 @@ login-container{
 
 .login-fogot{
     display: inline-block;
-    margin-left: 166px;
     font-size: small;
 }
 
@@ -177,3 +176,5 @@ login-container{
     width: 330px;
 
 }
+
+

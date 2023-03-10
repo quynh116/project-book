@@ -29,7 +29,7 @@
                             <div class="inputs">
                                 <br/><input type="text" name="txtname" placeholder="Tên" required=""/>
                                 <br/><input type="text" name="txtphone" placeholder="Số ĐT" required=""/>
-                                <br/><input type="text" name="txtemail" placeholder="Email" required=""/>
+                                <br/><input type="email" name="txtemail" placeholder="Email" required=""/>
                                 <br/><input type="password" name="txtpassword" placeholder="Mật khẩu" required=""/>
                                 <br/><input type="password" name="txtpassword" placeholder="Nhập lại mật khẩu" required=""/>
                                 <br/><input type="submit" value="Tạo tài khoản" name="action"/>

@@ -9,7 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>CarDetail Page</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo-removebg-preview.png"/>
         <link href="css/Cartcss.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>

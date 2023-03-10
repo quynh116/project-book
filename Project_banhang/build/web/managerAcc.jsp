@@ -76,7 +76,7 @@
                         <div class="col-sm-6">
                             <h2>Quản lý <b>tài khoản</b></h2>
                         </div>
-                        
+
                         <!--thêm mới hoặc xóa tài khoản-->
                         <div class="col-sm-6">
                             <a href="#addAccModal"  class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm mới tài khoản</span></a>
@@ -92,8 +92,8 @@
                         <div><a href="#" onclick="showAcc(3)"class="menu">Tài khoản bị chặn</a></div>
                     </div>
                 </div>
-                
-                
+
+
                 <!--hiện tài khoản admin gốc giữ nguyên -->
                 <div class="manager-Acc-detail1 " id="Acc1" >
                     <table class="table table-striped table-hover">
@@ -139,7 +139,15 @@
                                     </span>
                                 </td>
                                 <td>1</td>
-                                <td>huynh pham</td>
+                                <td><div class="hover-detail">huynh pham
+                                        <div class="hover-detail-body">
+                                            <h4>Thông tin chi tiết</h4>
+                                            <hr>
+                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
                                 <td>
                                     <div>huynh@gmail.com </div>
                                 </td>
@@ -164,7 +172,15 @@
                                     </span>
                                 </td>
                                 <td>1</td>
-                                <td>huynh pham</td>
+                                <td><div class="hover-detail">huynh pham
+                                        <div class="hover-detail-body">
+                                            <h4>Thông tin chi tiết</h4>
+                                            <hr>
+                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
                                 <td>
                                     <div>huynh@gmail.com </div>
                                 </td>
@@ -185,8 +201,8 @@
                         </tbody>
                     </table>
                 </div>
-                
-                
+
+
                 <!--hiển thị tài khoản hoạt động-->
                 <div class="manager-Acc-detail1" id="Acc2" style="display: none">
                     <table class="table table-striped table-hover">
@@ -236,9 +252,11 @@
                                         <div class="hover-detail-body">
                                             <h4>Thông tin chi tiết</h4>
                                             <hr>
-                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div></div>
+                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
+                                        </div>
                                     </div>
-                                    </div></td>
+                                    
+                                </td>
                                 <td>
                                     <div>huynh@gmail.com </div>
                                 </td>
@@ -261,8 +279,8 @@
                         </tbody>
                     </table>
                 </div>
-            
-            <!--hiển thị tài khoản bị chặn-->
+
+                <!--hiển thị tài khoản bị chặn-->
                 <div class="manager-Acc-detail2" id="Acc3" style="display: none">
                     <table class="table table-striped table-hover">
                         <thead>
@@ -294,7 +312,15 @@
                                     </span>
                                 </td>
                                 <td>1</td>
-                                <td>huynh pham</td>
+                                <td><div class="hover-detail">huynh pham
+                                        <div class="hover-detail-body">
+                                            <h4>Thông tin chi tiết</h4>
+                                            <hr>
+                                            <div>Địa chỉ: <span>11 tran phu</span>,<span>phường 8</span>,<span>Quận 5</span>,<span>Hồ Chí Minh</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
                                 <td>
                                     <div>huynh@gmail.com </div>
                                 </td>
@@ -315,9 +341,9 @@
                         </tbody>
                     </table>
                 </div>
-            
-            
-            <!--phân trang-->
+
+
+                <!--phân trang-->
                 <div class="clearfix">
                     <!--                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>-->
                     <ul class="pagination">

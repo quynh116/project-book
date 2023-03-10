@@ -13,7 +13,10 @@
         <link rel="shortcut icon" type="image/png" href="images/logo-removebg-preview.png"/>
         <link href="css/profileAcc.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -21,8 +24,8 @@
 
             <div class="container-profile">
                 <div class="container-child">
-                    
-                    
+
+
                     <!--Menu-->
                     <div class="profile-left">
                         <ul>
@@ -31,7 +34,7 @@
                             <a href="profileAcc.jsp?content=3"  ><li class="menu-acc1"><img style="margin-right: 11px;" src="images/icons1/cart-removebg1-preview.png" alt="cart">Đơn hàng của tôi</li></a>
                         </ul>
                     </div>
-                    
+
                     <!--trang đầu tiên chỉnh sửa thông tin cá nhân-->
                     <div class="profile-right" id="content1">
                         <h3>Thông tin cá nhân</h3>
@@ -161,7 +164,7 @@
                                 <input type="submit" value="Lưu thay đổi" name="action"/>
                             </div>
                         </form>
-                        
+
                         <!--Thay đổi mật khẩu-->
                         <div class="profile-pass">
                             <img src="images/icons1/120px-OOjs_UI_icon_lock.svg.png" alt="lock.svg">
@@ -171,14 +174,14 @@
                             <a href="#form-pass" class="edit-button1">Thay đổi</a>
                             <div class="edit-form" style="display: none;" id="form-pass">
                                 <form action="#" method="post">
-                                    <label for="pas">Mật khẩu hiện tại</label>
-                                    <br><input type="password" id="name" name="name" placeholder=""><br>
-                                    <a style="float: right;font-size: 13px; text-decoration: none;" href="">Quên mật khẩu</a>
+<!--                                    <label for="pas">Mật khẩu hiện tại</label>-->
+                                    <input type="password" id="name" name="name" placeholder="Mật khẩu hiện tại"><br>
+                                    <a style="float: right;font-size: 13px; text-decoration: none;" href="#" data-toggle="modal" data-target="#myModal" >Quên mật khẩu?</a>
                                     <br>
-                                    <label style="margin-top: 10px;" for="pas">Mật khẩu mới</label>
-                                    <br><input type="password" id="name" name="name" placeholder=""><br>
-                                    <br><label for="pass">Nhập lại mật khẩu mới</label>
-                                    <br><input type="password" id="email" name="email" placeholder=""><br>
+<!--                                    <label style="margin-top: 10px;" for="pas">Mật khẩu mới</label>-->
+                                    <br><input type="password" id="name" name="name" placeholder="Mật khẩu mới"><br>
+<!--                                    <br><label for="pass">Nhập lại mật khẩu mới</label>-->
+                                    <br><input type="password" id="email" name="email" placeholder="Xác nhận mật khẩu"><br>
 
                                     <div class="edit-form-sumbit"><input type="submit" value="Save"></div>
                                 </form>
@@ -187,7 +190,7 @@
 
                         </div>
                     </div>
-                    
+
                     <!--thay đổi địa chỉ-->
                     <div class="profile-right1" id="content2" style="display: none">
                         <div class="profile-right1-body">
@@ -219,7 +222,7 @@
                             </div>   
                         </div>
                     </div>
-                    
+
                     <!--xem đơn hang đã đặt và đã hủy-->
                     <div class="profile-right2" id="content3" style="display: none">
                         <div class="profile-right2-body">
@@ -346,8 +349,8 @@
 
 
 
-        
-        <!--phần bình luận-->
+
+            <!--phần bình luận-->
             <div class="modal-profile modal-overlay" id="Comment">
                 <a href="#" class="overlay-close"></a>
 
@@ -377,7 +380,33 @@
             </div>
 
         <jsp:include page="Footer.jsp"></jsp:include>
+        
+        <!-- The Modal lấy code -->
+        <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form action="" method="post">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Lấy lại mật khẩu</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
 
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <span>mã đã được gửi vào  email của bạn </span>
+                                    <br/><input type="email" name="txtemail" placeholder="Nhập mã xác nhận" required=""/>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <input type="submit" class="btn btn-success" value="Gửi mã" data-toggle="modal" data-dismiss="modal" data-target="#myModalcode">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
         <script>
             var editButton = document.querySelector('.edit-button1');
             var editForm = document.querySelector('.edit-form');

@@ -83,6 +83,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"container\">\n");
       out.write("            <div class=\"row\">\n");
       out.write("                <div class=\"col-sm-3\">\n");
+      out.write("                    <!--Phần danh mục-->\n");
       out.write("                    <div class=\"card bg-light mb-3\">\n");
       out.write("                        <div style=\"font-size: 18px;font-weight: 450; \" class=\"card-header bg-primary text-white text-uppercase\"><i class=\"fa fa-list\"></i> DANH MỤC</div>\n");
       out.write("                        <ul class=\"list-group category_block\">\n");
@@ -109,6 +110,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"col-sm-9\">\n");
       out.write("                    <div class=\"row\">\n");
       out.write("                        \n");
+      out.write("                        <!--load sản phẩm-->\n");
       out.write("                        <div style=\"margin-bottom: 20px\" class=\"col-12 col-md-6 col-lg-4\">\n");
       out.write("                                <div class=\"card \">\n");
       out.write("                                    <img style=\" width: 180px;height: 250px;margin-left: 35px;margin-top: 5px;\"  class=\"card-img-top\" src=\"images/Rectangle 30.png\" alt=\"Card image cap\">\n");
